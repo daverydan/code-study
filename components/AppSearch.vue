@@ -26,29 +26,19 @@ const isOpen = ref(false);
 
 const commandPaletteRef = ref();
 
-const java = [
-	{ id: 1, label: 'Start', url: '/java' },
-	{ id: 2, label: 'JVM', url: '/java/jvm' },
-];
-
-const javascript = [
-	{ id: 11, label: 'Start', url: '/javascript' },
-	{ id: 22, label: 'ES6', url: '/javascript/es6' },
-];
-
 const groups = [{
 	key: 'java',
 	label: 'Java',
 	inactive: '',
-	commands: java,
+	commands: utilsListItems.java,
 }, {
 	key: 'javascript',
 	label: 'Javascript',
 	inactive: '',
-	commands: javascript,
+	commands: utilsListItems.javascript,
 }]
 
-const selected = ref([java[0]]);
+const selected = ref([utilsListItems.java[0]]);
 
 watch(() => selected.value, (newValue) => {
 	if (newValue.url === route.fullPath) {
