@@ -32,20 +32,30 @@ const groups = [{
 	inactive: '',
 	commands: utilsListItems.java,
 }, {
+	key: 'php',
+	label: 'PHP',
+	inactive: '',
+	commands: utilsListItems.php,
+}, {
 	key: 'javascript',
 	label: 'Javascript',
 	inactive: '',
 	commands: utilsListItems.javascript,
+}, {
+	key: 'sql',
+	label: 'SQL',
+	inactive: '',
+	commands: utilsListItems.sql,
 }]
 
 const selected = ref([utilsListItems.java[0]]);
 
 watch(() => selected.value, (newValue) => {
-	if (newValue.url === route.fullPath) {
+	if (newValue.to === route.fullPath) {
 		isOpen.value = false;
 		return;
 	}
 	isOpen.value = false;
-	router.push(newValue.url);
+	router.push(newValue.to);
 })
 </script>

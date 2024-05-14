@@ -1,11 +1,17 @@
 <template>
-	<div class="m-4">
-		<header>
+	<div class="max-w-7xl mx-auto p-4">
+		<header class="flex space-x-3 sm:space-x-0">
+			<AppMenu />
 			<AppSearch />
 		</header>
-		<main class="py-8">
-			<slot />
-		</main>
+
+		<div class="content flex py-8">
+			<AppSidebar />
+			<main class="">
+				<slot />
+			</main>
+		</div>
+
 		<footer></footer>
 	</div>
 </template>
