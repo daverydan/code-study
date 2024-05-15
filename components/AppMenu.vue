@@ -14,37 +14,7 @@
 			<UDivider class="mb-4" />
 
 			<menu class="sm:block mr-12">
-				<NuxtLink to="/java" class="block mb-2">Java</NuxtLink>
-				<UVerticalNavigation
-					class="mb-4"
-					:links="utilsListItems.java"
-					:ui="ui"
-					@click="isOpen = false"
-				/>
-
-				<NuxtLink to="/php" class="block mb-2">PHP</NuxtLink>
-				<UVerticalNavigation
-					class="mb-4"
-					:links="utilsListItems.php"
-					:ui="ui"
-					@click="isOpen = false"
-				/>
-
-				<NuxtLink to="/javascript" class="block mb-2">JavaScript</NuxtLink>
-				<UVerticalNavigation
-					class="mb-4"
-					:links="utilsListItems.javascript"
-					:ui="ui"
-					@click="isOpen = false"
-				/>
-
-				<NuxtLink to="/sql" class="block mb-2">SQL</NuxtLink>
-				<UVerticalNavigation
-					class="mb-4"
-					:links="utilsListItems.sql"
-					:ui="ui"
-					@click="isOpen = false"
-				/>
+				<MenuListItems @link-clicked="isOpen = false" />
 			</menu>
 		</div>
 	</USlideover>
