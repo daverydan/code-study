@@ -7,7 +7,7 @@
 
 		<div class="content flex py-8">
 			<AppSidebar />
-			<main class="">
+			<main class="w-full">
 				<slot />
 			</main>
 		</div>
