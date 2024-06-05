@@ -1,5 +1,5 @@
 <template>
-	<aside class="hidden sm:block mr-12">
+	<aside class="hidden sm:block pr-12 w-72">
 		<MenuListItems />
 	</aside>
 </template>
