@@ -2,6 +2,8 @@ export const utilsListItems = {
 	java: [
 		{ id: 'jv-1', label: 'Start', to: '/java' },
 		{ id: 'jv-2', label: 'JVM', to: '/java/jvm' },
+		{ id: 'jv-3', label: 'Statement', to: '/java/statement' },
+		{ id: 'jv-4', label: 'Keywords', to: '/java/keywords' },
 	],
 
 	javascript: [
@@ -11,6 +13,11 @@ export const utilsListItems = {
 
 	php: [
 		{ id: 'php-1', label: 'Start', to: '/php' },
+		// { id: 'php-2', label: 'Print', to: '/php/print' },
+	],
+
+	patternsPrinciples: [
+		{ id: 'pp-1', label: 'Start', to: '/patterns-principles' },
 		// { id: 'php-2', label: 'Print', to: '/php/print' },
 	],
 

@@ -27,6 +27,11 @@ const isOpen = ref(false);
 const commandPaletteRef = ref();
 
 const groups = [{
+	key: 'patterns-principles',
+	label: 'Pattern & Principles',
+	inactive: '',
+	commands: utilsListItems.patternsPrinciples,
+},{
 	key: 'java',
 	label: 'Java',
 	inactive: '',

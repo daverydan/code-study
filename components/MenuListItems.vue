@@ -1,5 +1,15 @@
 <template>
 	<div class="menu-list-items">
+		<NuxtLink to="/patterns-principles" class="block mb-2">
+			Patterns & Principles
+		</NuxtLink>
+		<UVerticalNavigation
+			class="mb-4"
+			:links="utilsListItems.patternsPrinciples"
+			:ui="ui"
+			@click="$emit('link-clicked')"
+		/>
+
 		<NuxtLink to="/java" class="block mb-2">Java</NuxtLink>
 		<UVerticalNavigation
 			class="mb-4"
