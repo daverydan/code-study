@@ -17,7 +17,7 @@
 		<p class="mb-2">Resources:</p>
 		<ul class="list-disc ml-5 space-y-1">
 			<li>
-				<a href="https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/" class="text-primary-400 hover:text-primary-500 transition-all duration-200 hover:underline underline-offset-4">
+				<a href="https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/" target="_blank" class="text-primary-400 hover:text-primary-500 transition-all duration-200 hover:underline underline-offset-4">
 					Solid Principles Explained in Plain English
 				</a>
 			</li>
