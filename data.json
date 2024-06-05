@@ -1,0 +1,42 @@
+{
+    "data-list-items" : [
+		{
+			"title": "Patterns & Principles",
+			"slug": "patterns-principles",
+			"routes": [
+				{ "id": "pp-1", "label": "Start", "to": "/patterns-principles" }
+			]
+		},
+		{
+			"title": "Java",
+			"slug": "java",
+			"routes": [
+				{ "id": "jv-1", "label": "Start", "to": "/java" },
+				{ "id": "jv-2", "label": "JVM", "to": "/java/jvm" },
+				{ "id": "jv-3", "label": "Statement", "to": "/java/statement" },
+				{ "id": "jv-4", "label": "Keywords", "to": "/java/keywords" }
+			]
+		},
+		{
+			"title": "JavaScript",
+			"slug": "javascript",
+			"routes": [
+				{ "id": "js-1", "label": "Start", "to": "/javascript" }
+			]
+		},
+		{
+			"title": "PHP",
+			"slug": "php",
+			"routes": [
+				{ "id": "php-1", "label": "Start", "to": "/php" }
+			]
+		},
+		{
+			"title": "SQL",
+			"slug": "sql",
+			"routes": [
+				{ "id": "sql-1", "label": "Start", "to": "/sql" }
+			]
+		}
+	]
+}

@@ -1,50 +1,25 @@
 <template>
 	<div class="menu-list-items">
-		<NuxtLink to="/patterns-principles" class="block mb-2">
-			Patterns & Principles
-		</NuxtLink>
-		<UVerticalNavigation
-			class="mb-4"
-			:links="utilsListItems.patternsPrinciples"
-			:ui="ui"
-			@click="$emit('link-clicked')"
-		/>
-
-		<NuxtLink to="/java" class="block mb-2">Java</NuxtLink>
-		<UVerticalNavigation
-			class="mb-4"
-			:links="utilsListItems.java"
-			:ui="ui"
-			@click="$emit('link-clicked')"
-		/>
-
-		<NuxtLink to="/php" class="block mb-2">PHP</NuxtLink>
-		<UVerticalNavigation
-			class="mb-4"
-			:links="utilsListItems.php"
-			:ui="ui"
-			@click="$emit('link-clicked')"
-		/>
-
-		<NuxtLink to="/javascript" class="block mb-2">JavaScript</NuxtLink>
-		<UVerticalNavigation
-			class="mb-4"
-			:links="utilsListItems.javascript"
-			:ui="ui"
-			@click="$emit('link-clicked')"
-		/>
-
-		<NuxtLink to="/sql" class="block mb-2">SQL</NuxtLink>
-		<UVerticalNavigation
-			class="mb-4"
-			:links="utilsListItems.sql"
-			:ui="ui"
-			@click="$emit('link-clicked')"
-		/>
+		<template v-for="items in data['data-list-items']" :key="items.title">
+			<NuxtLink
+				to="/patterns-principles"
+				class="block mb-2"
+			>
+				{{ items.title }}
+			</NuxtLink>
+			<UVerticalNavigation
+				class="mb-4"
+				:links="items.routes"
+				:ui="ui"
+				@click="$emit('link-clicked')"
+			/>
+		</template>
 	</div>
 </template>
 
 <script setup>
+import data from '@/data.json'
+
 const ui = {
 	wrapper: 'border-s border-gray-200 dark:border-gray-800 space-y-2',
 	base: 'group block border-s -ms-px leading-6 before:hidden',
